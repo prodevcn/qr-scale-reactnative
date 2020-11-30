@@ -1,0 +1,62 @@
+diff --git a/node_modules/react-native-material-textfield/src/components/affix/index.js b/node_modules/react-native-material-textfield/src/components/affix/index.js
+index 0f85022..e2dede9 100644
+--- a/node_modules/react-native-material-textfield/src/components/affix/index.js
++++ b/node_modules/react-native-material-textfield/src/components/affix/index.js
+@@ -1,6 +1,6 @@
+ import PropTypes from 'prop-types';
+ import React, { PureComponent } from 'react';
+-import { Animated } from 'react-native';
++import { Animated, Text } from 'react-native';
+ 
+ import styles from './styles';
+ 
+@@ -11,7 +11,7 @@ export default class Affix extends PureComponent {
+ 
+   static propTypes = {
+     numberOfLines: PropTypes.number,
+-    style: Animated.Text.propTypes.style,
++    style: Text.propType,
+ 
+     color: PropTypes.string.isRequired,
+     fontSize: PropTypes.number.isRequired,
+diff --git a/node_modules/react-native-material-textfield/src/components/helper/index.js b/node_modules/react-native-material-textfield/src/components/helper/index.js
+index 6060f9f..98b3c64 100644
+--- a/node_modules/react-native-material-textfield/src/components/helper/index.js
++++ b/node_modules/react-native-material-textfield/src/components/helper/index.js
+@@ -1,6 +1,6 @@
+ import PropTypes from 'prop-types';
+ import React, { PureComponent } from 'react';
+-import { Animated } from 'react-native';
++import { Animated, Text } from 'react-native';
+ 
+ import styles from './styles';
+ 
+@@ -11,7 +11,7 @@ export default class Helper extends PureComponent {
+ 
+     disabled: PropTypes.bool,
+ 
+-    style: Animated.Text.propTypes.style,
++    style: Text.propType,
+ 
+     baseColor: PropTypes.string,
+     errorColor: PropTypes.string,
+diff --git a/node_modules/react-native-material-textfield/src/components/label/index.js b/node_modules/react-native-material-textfield/src/components/label/index.js
+index 82eaf03..2b9038d 100644
+--- a/node_modules/react-native-material-textfield/src/components/label/index.js
++++ b/node_modules/react-native-material-textfield/src/components/label/index.js
+@@ -1,6 +1,6 @@
+ import PropTypes from 'prop-types';
+ import React, { PureComponent } from 'react';
+-import { Animated } from 'react-native';
++import { Animated, Text } from 'react-native';
+ 
+ import styles from './styles';
+ 
+@@ -43,7 +43,7 @@ export default class Label extends PureComponent {
+       y1: PropTypes.number,
+     }),
+ 
+-    style: Animated.Text.propTypes.style,
++    style: Text.propType,
+     label: PropTypes.string,
+   };
